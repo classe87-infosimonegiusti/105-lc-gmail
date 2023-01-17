@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/themes/desk/bg2_1920x1200.jpg');
+    width: 50%;
+    margin: auto;
+}
+
+#header-logo {
+    padding: 10px 0px;
+}
+
+#logo {
+    height: 100px;
+    vertical-align: middle;
+}
+
+#logo-text {
+    color: white;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.header-search {
+    margin: 10px 0px;
+}
+
+#count {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+#unread-count {
+    background-color: orange;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+}
+
+#email-list {
+    margin: 10px 0px;
+}
+
+.email-row {
+    padding: 5px;
+    border: solid 1px black;
+    background-color: darkgrey;
+}
+
+.email-text {
+    color: grey;
+}
+
+.star::before {
+    content: '\2601';
+}
+
+.email-text::before {
+    content: ' - ';
+}
+
+.email-text::after {
+    content: '...';
+}
+
+.email-row.read {
+    background-color: white;
+}
